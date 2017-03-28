@@ -76,7 +76,7 @@
 <meta property="og:image" content="http://i1.piimg.com/4851/8ab8ba5bb261b638.png">
 <meta property="og:image" content="http://i1.piimg.com/4851/dff29e93a8be2fb9.png">
 <meta property="og:image" content="http://i1.piimg.com/4851/a70805462a59d077.png">
-<meta property="og:updated_time" content="2017-03-28T14:29:04.823Z">
+<meta property="og:updated_time" content="2017-03-28T14:30:17.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实验2  git使用">
 <meta name="twitter:description" content="一、实验目的
@@ -425,22 +425,21 @@
 </li>
 <li><p>再然后，我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：Creating a new branch is quick. 然后提交：<br>$ git add readme.txt<br>$ git commit -m “branch test”</p>
 </li>
-<li><p>现在，dev分支的工作完成，我们就可以切换回master分支：</p>
+<li><p>现在，dev分支的工作完成，我们就可以切换回master分支：<br>$ git checkout master<br>Switched to branch ‘master’</p>
+</li>
+<li><p>切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变。</p>
+</li>
+<li><p>现在，我们把dev分支的工作成果合并到master分支上：<br>$ git merge dev</p>
+</li>
+<li><p>合并完成后，就可以放心地删除dev分支了：<br>$ git branch -d dev<br>Deleted branch dev (was fec145a)</p>
+</li>
+<li><p>删除后，查看branch，就只剩下master分支了：<br>$ git branch</p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p>$ git checkout master<br>Switched to branch ‘master’</p>
-<pre><code>- 切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变。
-
-- 现在，我们把dev分支的工作成果合并到master分支上：
-</code></pre><p>$ git merge dev</p>
-<pre><code>- 合并完成后，就可以放心地删除dev分支了：
-</code></pre><p>$ git branch -d dev<br>Deleted branch dev (was fec145a)</p>
-<pre><code>- 删除后，查看branch，就只剩下master分支了：
-</code></pre><p>$ git branch</p>
 <ul>
 <li><p>实验结果：</p>
 <ul>
