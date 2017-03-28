@@ -76,7 +76,7 @@
 <meta property="og:image" content="http://i1.piimg.com/4851/8ab8ba5bb261b638.png">
 <meta property="og:image" content="http://i1.piimg.com/4851/dff29e93a8be2fb9.png">
 <meta property="og:image" content="http://i1.piimg.com/4851/a70805462a59d077.png">
-<meta property="og:updated_time" content="2017-03-28T14:16:29.648Z">
+<meta property="og:updated_time" content="2017-03-28T14:18:11.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实验2  git使用">
 <meta name="twitter:description" content="一、实验目的
@@ -154,7 +154,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             <i class="menu-item-icon icon-next-home"></i> <br />
-            Startseite
+            Home
           </a>
         </li>
       
@@ -162,7 +162,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             <i class="menu-item-icon icon-next-categories"></i> <br />
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -170,7 +170,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             <i class="menu-item-icon icon-next-archives"></i> <br />
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -186,7 +186,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             <i class="menu-item-icon icon-next-about"></i> <br />
-            Über
+            About
           </a>
         </li>
       
@@ -361,7 +361,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Veröffentlicht am
+          Posted on
           <time itemprop="dateCreated" datetime="2017-03-28T21:54:06+08:00" content="2017-03-28">
             2017-03-28
           </time>
@@ -426,13 +426,14 @@
 </ul>
 </li>
 </ul>
-<ul>
-<li><p>再然后，我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：Creating a new branch is quick. 然后提交：<br> $ git add readme.txt </p>
-<p> $ git commit -m “branch test”</p>
-</li>
+<pre><code>- 再然后，我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：Creating a new branch is quick. 然后提交：
+ $ git add readme.txt 
+
+ $ git commit -m &quot;branch test&quot;
+</code></pre><ul>
 <li><p>现在，dev分支的工作完成，我们就可以切换回master分支：</p>
 <p>$ git checkout master<br>Switched to branch ‘master’</p>
-<ul>
+</li>
 <li><p>切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变。</p>
 </li>
 <li><p>现在，我们把dev分支的工作成果合并到master分支上：<br>$ git merge dev</p>
@@ -440,8 +441,6 @@
 <li><p>合并完成后，就可以放心地删除dev分支了：<br>$ git branch -d dev<br>Deleted branch dev (was fec145a)</p>
 </li>
 <li><p>删除后，查看branch，就只剩下master分支了：<br>$ git branch</p>
-</li>
-</ul>
 </li>
 </ul>
 <ul>
@@ -661,10 +660,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table Of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -679,21 +678,21 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">Kategorien</span>
+              <span class="site-state-item-name">categories</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">Tags</span>
+              <span class="site-state-item-name">tags</span>
               </a>
           </div>
 
